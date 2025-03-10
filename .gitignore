@@ -1,0 +1,33 @@
+# KiCad backup files
+*.bak
+*-bak
+*-cache*
+*-rescue*
+_autosave*
+\#auto_saved_files\#
+
+# KiCad generated files
+*.net
+*.dsn
+*.ses
+
+# KiCad footprint cache
+fp-info-cache
+
+# Temporary files
+*.000
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses 
