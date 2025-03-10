@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "LED Switch Circuit with Battery"
 Date "2024-03-26"
-Rev "v1.2"
+Rev "v1.3"
 Comp "Coolum High School"
 Comment1 "Designed by Jake Wanre"
 Comment2 "Simple LED circuit with battery power"
@@ -25,6 +25,7 @@ F 4 "Forward Voltage: 2V" H 5750 3400 50  0000 C CNN "Voltage"
 F 5 "Current: 20mA" H 5750 3300 50  0000 C CNN "Current"
 	1    5750 3500
 	1    0    0    -1  
+F 6 "Color: Red" H 5750 3200 50  0000 C CNN "Color"
 $EndComp
 $Comp
 L Switch:SW_Push SW1
@@ -37,6 +38,7 @@ F 3 "~" H 4750 3700 50  0001 C CNN
 F 4 "Max Voltage: 12V" H 4750 3400 50  0000 C CNN "Rating"
 	1    4750 3500
 	1    0    0    -1  
+F 5 "Color: Black" H 4750 3300 50  0000 C CNN "Color"
 $EndComp
 $Comp
 L Device:R R1
@@ -49,6 +51,7 @@ F 3 "~" H 5250 3500 50  0001 C CNN
 F 4 "Power: 0.25W" V 5250 3300 50  0000 C CNN "Rating"
 	1    5250 3500
 	0    1    1    0   
+F 5 "Color: Red-Red-Brown-Gold" V 5250 3200 50  0000 C CNN "Color Code"
 $EndComp
 $Comp
 L Device:Battery BT1
@@ -61,6 +64,7 @@ F 3 "~" V 4000 3760 50  0001 C CNN
 F 4 "Voltage: 9V DC" H 4000 3400 50  0000 C CNN "Rating"
 	1    4000 3700
 	1    0    0    -1  
+F 5 "Color: Black" H 4000 3300 50  0000 C CNN "Color"
 $EndComp
 $Comp
 L power:GND #PWR02
@@ -101,16 +105,36 @@ Wire Wire Line
 Wire Wire Line
 	4000 3900 4000 4000
 Connection ~ 4000 4000
+Wire Notes Line width 20
+	4000 3500 4550 3500
+Wire Notes Line width 20
+	4950 3500 5100 3500
+Wire Notes Line width 20
+	5400 3500 5600 3500
+Wire Notes Line width 20
+	5900 3500 6100 3500
+Wire Notes Line width 20
+	6100 3500 6100 4000
+Wire Notes Line width 20
+	6100 4000 4000 4000
+Wire Notes Line style solid RGB 255 0 0
+	5900 3500 6100 3500
+Wire Notes Line style solid RGB 255 0 0
+	5400 3500 5600 3500
+Wire Notes Line style solid RGB 0 0 255
+	4000 3900 4000 4000
+Wire Notes Line style solid RGB 255 165 0
+	4000 3500 4550 3500
 Text Notes 3700 3200 0    50   ~ 0
-Power Supply\n9V DC
+Power Supply\n9V DC\n(Black Case)
 Text Notes 4650 3200 0    50   ~ 0
-Push Button Switch\nNormally Open
+Push Button Switch\nNormally Open\n(Black Button)
 Text Notes 5150 3200 0    50   ~ 0
-Current Limiting\nResistor\n220Ω, 0.25W
+Current Limiting\nResistor 220Ω\n(Red-Red-Brown-Gold)
 Text Notes 5650 3200 0    50   ~ 0
-LED Indicator\nRed, 2V, 20mA
+LED Indicator\nRed, 2V, 20mA\n(Red Body, Clear Lens)
 Text Notes 4000 4500 0    50   ~ 0
-Ground Connection\n0V
+Ground Connection\n0V\n(Black Wire)
 Text Notes 3500 2800 0    100  ~ 0
 Simple LED Circuit with Battery Power
 Text Label 4100 3500 0    50   ~ 0
@@ -122,5 +146,5 @@ LED+
 Text Label 6000 3500 0    50   ~ 0
 GND
 Text Notes 6500 3500 0    50   ~ 0
-Circuit Specifications:\n• Input: 9V DC Battery\n• Current Draw: ~20mA\n• LED Forward Voltage: 2V\n• Resistor Power: P = I²R = (20mA)² × 220Ω = 0.088W\n• Voltage Drop: V = IR = 20mA × 220Ω = 4.4V
+Circuit Specifications:\n• Input: 9V DC Battery\n• Current Draw: ~20mA\n• LED Forward Voltage: 2V\n• Resistor Power: P = I²R = (20mA)² × 220Ω = 0.088W\n• Voltage Drop: V = IR = 20mA × 220Ω = 4.4V\n\nWire Colors:\n• Power (+9V): Orange\n• Signal: Red\n• Ground: Blue
 $EndSchr 
